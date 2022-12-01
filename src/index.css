@@ -1,13 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&family=Montserrat:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Montserrat", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo {
+  font-family: "Fira Code", monospace;
+}
+
+.slide-active {
+  transform: scale(1.5);
+  z-index: 1;
+}
+.slide-inactive {
+  transform: scale(0.87);
+  z-index: 0;
+  overflow: hidden;
 }
