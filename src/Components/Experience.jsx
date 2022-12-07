@@ -2,7 +2,7 @@ import Title from "./Title";
 
 export default function Experience() {
   return (
-    <section id="experience" className="my-20 px-8 ">
+    <section id="experience" className="my-20 px-16 ">
       <Title>Experience</Title>
       <article className="flex space-x-5">
         <Flag />

@@ -12,7 +12,7 @@ export default function Navbar() {
     { href: "#contact_me", title: "Contact me" },
   ];
   return (
-    <section className="w-full flex justify-between z-50 bg-white bg-opacity-30 drop-shadow-lg backdrop-blur-lg items-center lg:px-8 lg:py-4 fixed">
+    <section className="w-full flex justify-between z-50 bg-white bg-opacity-30 drop-shadow-lg backdrop-blur-lg items-center lg:px-16 lg:py-4 fixed">
       <h1 className="logo text-5xl">
         {openTag}
         <span className="text-blue-theme">F</span>
@@ -20,7 +20,7 @@ export default function Navbar() {
       </h1>
       <nav className="space-x-4 flex items-center">
         {href_to.map((data, i) => (
-          <a key={i} href={data.href}>
+          <a key={i} href={data.href} className="text-sm">
             {data.title}
           </a>
         ))}
