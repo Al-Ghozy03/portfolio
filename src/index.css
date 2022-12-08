@@ -23,3 +23,8 @@ body {
   z-index: 0;
   overflow: hidden;
 }
+
+.slide-active-mobile {
+  transform: scale(0.85);
+  z-index: 1;
+}

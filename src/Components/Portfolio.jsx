@@ -18,8 +18,9 @@ export default function Portfolio() {
       <Title>Portfolio</Title>
       <Segment />
       <Swiper
+        id="swiper_desktop"
         onSwiper={(swiper) => (swiperRef.current = swiper)}
-        className="w-full"
+        className="w-full lg:flex hidden"
         centeredSlides={true}
         loop
         // slidesPerView={1.5}
@@ -45,6 +46,41 @@ export default function Portfolio() {
               <div
                 className={`bg-gray-300 w-full h-[20rem] rounded-3xl ${
                   isActive ? "slide-active" : "slide-inactive"
+                }`}
+              ></div>
+            )}
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Swiper
+        id="swiper_mobile"
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        className="w-full lg:hidden"
+        centeredSlides={true}
+        loop
+        // slidesPerView={1.5}
+        spaceBetween={20}
+        breakpoints={{
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 40,
+          },
+          768: {
+            slidesPerView: 1.9,
+            spaceBetween: 150,
+          },
+          1024: {
+            slidesPerView: 1.9,
+            spaceBetween: 150,
+          },
+        }}
+      >
+        {carousel.map((data, i) => (
+          <SwiperSlide key={i} className="">
+            {({ isActive }) => (
+              <div
+                className={`bg-gray-300 h-60 rounded-3xl ${
+                  isActive ? "slide-active-mobile" : "slide-inactive"
                 }`}
               ></div>
             )}
@@ -81,7 +117,7 @@ function Segment() {
             currentIndex === i
               ? "bg-blue-theme text-white font-medium"
               : "text-[#9A9A9A]"
-          } px-5 py-1.5 rounded-full`}
+          } px-5 py-1.5 rounded-full lg:text-base text-sm`}
           key={i}
         >
           {data}

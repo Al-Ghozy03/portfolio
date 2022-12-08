@@ -3,10 +3,10 @@ export default function Footer() {
   const openTag = "<";
   const closeTag = "/>";
   return (
-    <footer className="px-16 bg-blue-theme w-full h-full py-8 text-white">
-      <section className="flex justify-between">
-        <article>
-          <h1 className="logo text-5xl text-white mb-3">
+    <footer className="lg:px-16 px-10 bg-blue-theme w-full h-full py-8 text-white">
+      <section className="flex flex-col justify-between">
+        <article className="flex lg:flex-col justify-between">
+          <h1 className="logo lg:text-5xl text-3xl text-white mb-3">
             {openTag}F{closeTag}
           </h1>
           <div className="flex space-x-3 items-center">
@@ -43,16 +43,16 @@ export default function Footer() {
         </article>
         <article className="flex space-x-10">
           <div>
-            <h3 className="font-semibold text-2xl mb-1">Service</h3>
-            <p className="capitalize text-sm mb-1">web development</p>
-            <p className="capitalize text-sm mb-1">mobile development</p>
-            <p className="capitalize text-sm mb-1">backend development</p>
+            <h3 className="font-semibold lg:text-2xl text-xl mb-1">Service</h3>
+            <p className="capitalize lg:text-sm text-xs mb-1">web development</p>
+            <p className="capitalize lg:text-sm text-xs mb-1">mobile development</p>
+            <p className="capitalize lg:text-sm text-xs mb-1">backend development</p>
           </div>
           <div>
-            <h3 className="font-semibold text-2xl mb-1">Contact</h3>
-            <p className="text-sm mb-1">muhammadfaizalghozi1@gmail.com</p>
-            <p className="text-sm mb-1">+62 878 1819 7732</p>
-            <p className="text-sm mb-1">Bekasi, West Java, Indonesia</p>
+            <h3 className="font-semibold lg:text-2xl text-xl mb-1">Contact</h3>
+            <p className="lg:text-sm text-xs mb-1">muhammadfaizalghozi1@gmail.com</p>
+            <p className="lg:text-sm text-xs mb-1">+62 878 1819 7732</p>
+            <p className="lg:text-sm text-xs mb-1">Bekasi, West Java, Indonesia</p>
           </div>
         </article>
       </section>

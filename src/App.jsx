@@ -8,7 +8,7 @@ import Skills from "./Components/Skills";
 
 export default function App() {
   return (
-    <main>
+    <main className="w-full">
       <Navbar />
       <About />
       <Portfolio />

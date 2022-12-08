@@ -57,7 +57,7 @@ export default function Skills() {
   return (
     <section id="skills" className="my-20 px-8">
       <Title>Skills</Title>
-      <article className="grid grid-cols-3 gap-y-6 gap-x-10 my-5">
+      <article className="grid lg:grid-cols-3 lg:gap-y-6 gap-y-4 lg:gap-x-10 my-5">
         {skills.map((data, i) => (
           <Card key={i} logo={data.logo} text={data.text} i={i} />
         ))}
