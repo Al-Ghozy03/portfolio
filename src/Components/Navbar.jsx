@@ -1,13 +1,14 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import { HambergerMenu, Moon } from "iconsax-react";
 import { useState } from "react";
+import { Link } from "react-scroll";
 
 const href_to = [
-  { href: "#about", title: "About" },
-  { href: "#portfolio", title: "Portfolio" },
-  { href: "#skills", title: "Skills" },
-  { href: "#experience", title: "Experience" },
-  { href: "#contact_me", title: "Contact me" },
+  { href: "about", title: "About" },
+  { href: "portfolio", title: "Portfolio" },
+  { href: "experience", title: "Experience" },
+  { href: "skills", title: "Skills" },
+  { href: "contact_me", title: "Contact me" },
 ];
 
 export default function Navbar() {
@@ -32,9 +33,17 @@ export default function Navbar() {
         </button>
         <nav className="space-x-4 lg:flex hidden items-center">
           {href_to.map((data, i) => (
-            <a key={i} href={data.href} className="text-sm">
+            <Link
+              className="text-sm cursor-pointer hover:font-semibold"
+              smooth
+              spy
+              duration={0.5}
+              to={data.href}
+              key={i}
+              activeClass="font-bold"
+            >
               {data.title}
-            </a>
+            </Link>
           ))}
           <Moon size={18} className="text-black" />
         </nav>
@@ -52,14 +61,17 @@ function MenuMobile({ open, setOpen }) {
       }`}
     >
       {href_to.map((data, i) => (
-        <a
+        <Link
           onClick={() => setOpen(false)}
           key={i}
-          href={data.href}
-          className={`text-sm ${!open && "hidden"}`}
+          smooth
+          spy
+          duration={0.5}
+          to={data.href}
+          className={`text-sm cursor-pointer ${!open && "hidden"}`}
         >
           {data.title}
-        </a>
+        </Link>
       ))}
       <Moon size={18} className={`text-black ${!open && "hidden"}`} />
     </nav>
