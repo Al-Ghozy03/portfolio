@@ -1,21 +1,10 @@
-import About from "./Components/About";
-import Contact from "./Components/Contact";
-import Experience from "./Components/Experience";
-import Footer from "./Components/Footer";
-import Navbar from "./Components/Navbar";
-import Portfolio from "./Components/Portfolio";
-import Skills from "./Components/Skills";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Screens";
 
 export default function App() {
   return (
-    <main className="w-full">
-      <Navbar />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Skills />
-      <Contact />
-      <Footer />
-    </main>
+    <Routes>
+      <Route path="/" element={<Home />} />
+    </Routes>
   );
 }

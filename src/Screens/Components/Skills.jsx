@@ -1,14 +1,14 @@
 import Title from "./Title";
-import react from "../Assets/react.png";
-import next from "../Assets/next js.png";
-import tailwind from "../Assets/tailwind.png";
-import nodejs from "../Assets/nodejs.png";
-import javascript from "../Assets/javascript.png";
-import figma from "../Assets/figma.png";
-import flutter from "../Assets/flutter.png";
-import mongodb from "../Assets/mongodb.png";
-import mysql from "../Assets/mysql.png";
-import laravel from "../Assets/laravel.png";
+import react from "../../Assets/react.png";
+import next from "../../Assets/next js.png";
+import tailwind from "../../Assets/tailwind.png";
+import nodejs from "../../Assets/nodejs.png";
+import javascript from "../../Assets/javascript.png";
+import figma from "../../Assets/figma.png";
+import flutter from "../../Assets/flutter.png";
+import mongodb from "../../Assets/mongodb.png";
+import mysql from "../../Assets/mysql.png";
+import laravel from "../../Assets/laravel.png";
 import { useState } from "react";
 
 export default function Skills() {

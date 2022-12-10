@@ -22,12 +22,7 @@ export default function Navbar() {
 
   return (
     <section>
-      <div className="w-full flex justify-between z-50 bg-white bg-opacity-30 drop-shadow-lg backdrop-blur-lg items-center lg:px-16 px-10 py-4 fixed">
-        <h1 className="logo lg:text-5xl text-3xl">
-          {openTag}
-          <span className="text-blue-theme">F</span>
-          {closeTag}
-        </h1>
+      <div className="w-full flex lg:justify-between justify-end z-50 bg-white bg-opacity-30 drop-shadow-lg backdrop-blur-lg items-center lg:px-16 px-10 lg:py-6 py-4 fixed">
         <button className="lg:hidden" onClick={handleOpen}>
           <HambergerMenu />
         </button>
@@ -45,8 +40,8 @@ export default function Navbar() {
               {data.title}
             </Link>
           ))}
-          <Moon size={18} className="text-black" />
         </nav>
+        <Moon size={18} className="text-black lg:flex hidden" />
       </div>
       <MenuMobile open={open} setOpen={setOpen} />
     </section>

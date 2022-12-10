@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Lottie from "react-lottie";
-import codeAnimation from "../Assets/108333-coding.json";
+import codeAnimation from "../..//Assets/108333-coding.json";
 
 export default function About() {
   return (

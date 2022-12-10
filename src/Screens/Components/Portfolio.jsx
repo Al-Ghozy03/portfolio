@@ -3,16 +3,10 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import Title from "./Title";
 import "swiper/css";
 import { ArrowRight2, ArrowLeft2 } from "iconsax-react";
+import project from "../../project";
 
 export default function Portfolio() {
   const swiperRef = useRef();
-  const carousel = [
-    "bg-red-500",
-    "bg-blue-500",
-    "bg-yellow-500",
-    "bg-green-500",
-    "bg-purple-500",
-  ];
   return (
     <section id="portfolio" className="my-5">
       <Title>Portfolio</Title>
@@ -40,14 +34,20 @@ export default function Portfolio() {
           },
         }}
       >
-        {carousel.map((data, i) => (
+        {project.map((data, i) => (
           <SwiperSlide key={i} className="py-20">
             {({ isActive }) => (
               <div
-                className={`bg-gray-300 w-full h-[20rem] rounded-3xl ${
+                style={{ backgroundImage: `url(${data.thumbnail})` }}
+                className={`bg-gray-300 w-full h-[20rem] rounded-3xl bg-cover ${
                   isActive ? "slide-active" : "slide-inactive"
                 }`}
-              ></div>
+              >
+                <div className="px-5 py-5 flex flex-col justify-end h-full w-full bg-gradient-to-t from-black rounded-3xl">
+                  <h1 className="text-white  font-bold">{data.name}</h1>
+                  <p className="text-white text-[0.6rem]">{data.description}</p>
+                </div>
+              </div>
             )}
           </SwiperSlide>
         ))}
@@ -75,7 +75,7 @@ export default function Portfolio() {
           },
         }}
       >
-        {carousel.map((data, i) => (
+        {project.map((data, i) => (
           <SwiperSlide key={i} className="">
             {({ isActive }) => (
               <div
