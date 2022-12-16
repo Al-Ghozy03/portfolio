@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./Screens";
+import Home from "./Screens/Home";
 
 export default function App() {
   return (

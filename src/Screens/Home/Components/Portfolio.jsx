@@ -1,9 +1,9 @@
 import { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import Title from "./Title";
 import "swiper/css";
 import { ArrowRight2, ArrowLeft2 } from "iconsax-react";
-import project from "../../project";
+import Title from "../../Components/Title";
+import project from "../../../project";
 
 export default function Portfolio() {
   const swiperRef = useRef();

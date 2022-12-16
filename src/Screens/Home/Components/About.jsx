@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-target-blank */
 import Lottie from "react-lottie";
-import codeAnimation from "../..//Assets/108333-coding.json";
+import codeAnimation from "../../../Assets/108333-coding.json";
 
 export default function About() {
   return (
@@ -49,11 +49,13 @@ export default function About() {
           <h1 className="lg:text-4xl text-2xl lg:text-left  text-blue-theme font-bold capitalize lg:my-3">
             muhammad faiz al ghozi
           </h1>
-          <p className="lg:text-base text-sm lg:text-left">
-            My name is Muhammad Faiz Al Ghozi. I have 6 months internship
-            experience at a start-up. I am a final semester high school student.
-            My future plan is to have a career as a software developer at a
-            start-up.
+          <p className="lg:text-sm text-sm lg:text-left">
+            I am a vocational high school student who has had an internship for
+            6 months at a technology startup. During the internship, I learned a
+            lot about software development and had the opportunity to work on
+            challenging and diverse projects. I also had the opportunity to work
+            with a team of experienced programmers who are highly motivated to
+            continue learning and growing with the company.
           </p>
           <button className="bg-blue-theme font-semibold rounded-full text-white px-6 lg:mx-0 mx-auto my-4 py-2.5 transition hover:scale-110 flex justify-center lg:text-base text-sm">
             Download CV
