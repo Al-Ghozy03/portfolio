@@ -1,9 +1,11 @@
-import ProjectInfo from "./Components/ProjectInfo";
+import Navbar from "../Components/Navbar";
+import Info from "./Components/Info";
 
 export default function Project() {
   return (
     <main>
-      <ProjectInfo />
+      <Navbar />
+      <Info />
     </main>
   );
 }

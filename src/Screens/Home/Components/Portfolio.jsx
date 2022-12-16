@@ -4,16 +4,19 @@ import "swiper/css";
 import { ArrowRight2, ArrowLeft2 } from "iconsax-react";
 import Title from "../../Components/Title";
 import project from "../../../project";
+import { Link } from "react-router-dom";
 
 export default function Portfolio() {
-  const swiperRef = useRef();
+  const swiperRefDesktop = useRef();
+  const swiperRefMobile = useRef();
+  console.log(project);
   return (
     <section id="portfolio" className="my-5">
       <Title>Portfolio</Title>
       <Segment />
       <Swiper
         id="swiper_desktop"
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSwiper={(swiper) => (swiperRefDesktop.current = swiper)}
         className="w-full lg:flex hidden"
         centeredSlides={true}
         loop
@@ -37,24 +40,28 @@ export default function Portfolio() {
         {project.map((data, i) => (
           <SwiperSlide key={i} className="py-20">
             {({ isActive }) => (
-              <div
-                style={{ backgroundImage: `url(${data.thumbnail})` }}
-                className={`bg-gray-300 w-full h-[20rem] rounded-3xl bg-cover ${
-                  isActive ? "slide-active" : "slide-inactive"
-                }`}
-              >
-                <div className="px-5 py-5 flex flex-col justify-end h-full w-full bg-gradient-to-t from-black rounded-3xl">
-                  <h1 className="text-white  font-bold">{data.name}</h1>
-                  <p className="text-white text-[0.6rem]">{data.description}</p>
+              <Link to={`/project/${data.slug}`}>
+                <div
+                  style={{ backgroundImage: `url(${data.thumbnail})` }}
+                  className={`bg-gray-300 w-full h-[20rem] rounded-3xl bg-cover ${
+                    isActive ? "slide-active" : "slide-inactive"
+                  }`}
+                >
+                  <div className="px-5 py-5 flex flex-col justify-end h-full w-full bg-gradient-to-t from-black rounded-3xl transition-opacity opacity-0 hover:opacity-100 cursor-pointer">
+                    <h1 className="text-white  font-bold">{data.name}</h1>
+                    <p className="text-white text-[0.6rem]">
+                      {data.description}
+                    </p>
+                  </div>
                 </div>
-              </div>
+              </Link>
             )}
           </SwiperSlide>
         ))}
       </Swiper>
       <Swiper
         id="swiper_mobile"
-        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSwiper={(swiper) => (swiperRefMobile.current = swiper)}
         className="w-full lg:hidden"
         centeredSlides={true}
         loop
@@ -87,15 +94,29 @@ export default function Portfolio() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <section className="flex justify-center space-x-4 my-3">
+      <section className="lg:flex hidden justify-center space-x-4 my-3">
         <button
-          onClick={() => swiperRef.current.slidePrev()}
+          onClick={() => swiperRefDesktop.current.slidePrev()}
           className="bg-blue-theme p-2 rounded-full"
         >
           <ArrowLeft2 className="text-white" />
         </button>
         <button
-          onClick={() => swiperRef.current.slideNext()}
+          onClick={() => swiperRefDesktop.current.slideNext()}
+          className="bg-blue-theme p-2 rounded-full"
+        >
+          <ArrowRight2 className="text-white" />
+        </button>
+      </section>
+      <section className="flex lg:hidden justify-center space-x-4 my-3">
+        <button
+          onClick={() => swiperRefMobile.current.slidePrev()}
+          className="bg-blue-theme p-2 rounded-full"
+        >
+          <ArrowLeft2 className="text-white" />
+        </button>
+        <button
+          onClick={() => swiperRefMobile.current.slideNext()}
           className="bg-blue-theme p-2 rounded-full"
         >
           <ArrowRight2 className="text-white" />
