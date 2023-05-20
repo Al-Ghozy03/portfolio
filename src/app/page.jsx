@@ -9,6 +9,10 @@ import Experience from "@/components/experience";
 import { Sms } from "iconsax-react";
 
 export default function Home() {
+  const openEmail = () => {
+    const mailTo = `mailto:muhammadfaizalghozi1@gmail.com?`;
+    window.location.href = mailTo;
+  };
   return (
     <main className="px-10 py-7 w-full">
       <section className="flex space-x-3 justify-end">
@@ -101,7 +105,7 @@ export default function Home() {
         <h1 className="lg:text-5xl text-3xl font-bold text-center lg:w-1/3 mx-auto lg:my-4">
           Contact me for your project
         </h1>
-        <button className="bg-[#212121] hover:bg-[#2B2B2B] lg:mt-10 mt-5 flex mx-auto text-xl items-center px-5 py-3 space-x-3 rounded-lg transition hover:scale-110">
+        <button onClick={openEmail} className="bg-[#212121] hover:bg-[#2B2B2B] lg:mt-10 mt-5 flex mx-auto text-xl items-center px-5 py-3 space-x-3 rounded-lg transition hover:scale-110">
           <Sms className="lg:h-7 lg:w-7 h-5 w-5" />
           <p className="lg:text-base text-sm">Get in touch</p>
         </button>

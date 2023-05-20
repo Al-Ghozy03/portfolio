@@ -70,7 +70,7 @@ function Modal({ open, setOpen, title, description, tools, url,thumbnail }) {
                   >
                     <Add className="text-white rotate-45" />
                   </button>
-                  <Image src={thumbnail} alt={title} width={350} height={350} />
+                  <Image src={thumbnail} alt={title} width={350} height={350} className="rounded-xl" />
                   <div>
                     <div className="flex justify-between">
                       <Dialog.Title
