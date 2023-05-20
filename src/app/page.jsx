@@ -16,28 +16,35 @@ export default function Home() {
   return (
     <main className="px-10 py-7 w-full">
       <section className="flex space-x-3 justify-end">
-        <svg
-          className="lg:h-9 lg:w-9 h-6 w-6"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 15 15"
+        <a
+          href="https://www.linkedin.com/in/muhammad-faiz-al-ghozi-2596bb206/"
+          target="_blank"
         >
-          <path
-            fill="#0a66c2"
-            fillRule="evenodd"
-            d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z"
-            clipRule="evenodd"
-          />
-        </svg>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="lg:h-9 lg:w-9 h-6 w-6"
-          viewBox="0 0 24 24"
-        >
-          <path
-            fill="white"
-            d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
-          />
-        </svg>
+          <svg
+            className="lg:h-9 lg:w-9 h-6 w-6"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 15"
+          >
+            <path
+              fill="#0a66c2"
+              fillRule="evenodd"
+              d="M2 1a1 1 0 0 0-1 1v11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2Zm1.05 5h1.9v6h-1.9V6Zm2.025-1.995a1.075 1.075 0 1 1-2.15 0a1.075 1.075 0 0 1 2.15 0ZM12 8.357c0-1.805-1.167-2.507-2.326-2.507a2.206 2.206 0 0 0-1.095.231c-.257.13-.526.424-.734.938h-.053V6H6v6.005h1.906V8.81c-.027-.327.077-.75.291-1.001c.215-.252.52-.312.753-.342h.073c.606 0 1.056.375 1.056 1.32v3.217h1.906L12 8.357Z"
+              clipRule="evenodd"
+            />
+          </svg>
+        </a>
+        <a href="https://github.com/Al-Ghozy03" target="_blank">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="lg:h-9 lg:w-9 h-6 w-6"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="white"
+              d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5c.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34c-.46-1.16-1.11-1.47-1.11-1.47c-.91-.62.07-.6.07-.6c1 .07 1.53 1.03 1.53 1.03c.87 1.52 2.34 1.07 2.91.83c.09-.65.35-1.09.63-1.34c-2.22-.25-4.55-1.11-4.55-4.92c0-1.11.38-2 1.03-2.71c-.1-.25-.45-1.29.1-2.64c0 0 .84-.27 2.75 1.02c.79-.22 1.65-.33 2.5-.33c.85 0 1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02c.55 1.35.2 2.39.1 2.64c.65.71 1.03 1.6 1.03 2.71c0 3.82-2.34 4.66-4.57 4.91c.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2Z"
+            />
+          </svg>
+        </a>
       </section>
       <section id="about" className="my-10 text-center">
         <Image
@@ -105,7 +112,10 @@ export default function Home() {
         <h1 className="lg:text-5xl text-3xl font-bold text-center lg:w-1/3 mx-auto lg:my-4">
           Contact me for your project
         </h1>
-        <button onClick={openEmail} className="bg-[#212121] hover:bg-[#2B2B2B] lg:mt-10 mt-5 flex mx-auto text-xl items-center px-5 py-3 space-x-3 rounded-lg transition hover:scale-110">
+        <button
+          onClick={openEmail}
+          className="bg-[#212121] hover:bg-[#2B2B2B] lg:mt-10 mt-5 flex mx-auto text-xl items-center px-5 py-3 space-x-3 rounded-lg transition hover:scale-110"
+        >
           <Sms className="lg:h-7 lg:w-7 h-5 w-5" />
           <p className="lg:text-base text-sm">Get in touch</p>
         </button>
