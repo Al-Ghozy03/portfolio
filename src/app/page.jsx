@@ -98,6 +98,16 @@ export default function Home() {
       <section id="experience">
         <Title className="w-44 mb-6">Experience</Title>
         <Experience
+          title={"Software Engineer"}
+          company={"PT. Pertamina Training and Consulting"}
+          date={"July 2023 - present"}
+          description={[
+            "Developed 3 websites in 6 months internship. Working with React JS, Next JS, Node JS, and Flutter.",
+            "Working with DevOps team.",
+            "Participate in developing government websites projects.",
+          ]}
+        />
+        <Experience
           title={"Intern IT Developer"}
           company={"PT. Graha Digital Pratama (Digital Buana)"}
           date={"July 2022 - January 2023"}
