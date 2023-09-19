@@ -4,9 +4,10 @@ import avatar from "./assets/profile.png";
 import Title from "../components/Title";
 import IconSkills from "@/components/icon_skills";
 import CardPortfolio from "@/components/card_portfolio";
-import data from "../json/portfolio.js";
+import data from "../variable/portfolio.js";
 import Experience from "@/components/experience";
 import { Sms } from "iconsax-react";
+import Service from "@/components/service";
 
 export default function Home() {
   const openEmail = () => {
@@ -58,12 +59,16 @@ export default function Home() {
           Hi, I'm Muhammad Faiz Al Ghozi
         </h1>
         <p className="lg:w-3/4 mx-auto lg:text-base text-sm lg:text-center text-justify">
-          I am a recent graduate who has an interest in working in the field of
-          programming. Accustomed to using various programming languages such as
-          HTML, CSS, Javascript and using Frameworks such as React JS, Next JS,
-          Node JS, Flutter. Honest, disciplined and able to work well in a team.
-          Has an internship experience of 6 months and has participated in
-          making web government websites.
+          I am a Software Engineer with over 1 year of experience. I am also a
+          student at Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA) with a
+          strong passion for programming. I possess in depth knowledge and
+          skills in technologies such as React JS, Next JS, Node JS, and
+          Flutter. My experience encompasses a variety of projects, including
+          active participation in developing web projects for government
+          institutions. I enjoy combining my academic insights with the
+          practical understanding I've gained from working in the industry. I am
+          always eager to continue learning and innovating towards achieving
+          optimal and high quality software solutions
         </p>
         <button
           onClick={() =>
@@ -79,6 +84,10 @@ export default function Home() {
       <section id="skills" className="lg:px-64 md:px-32 px-0">
         <Title className="w-20">Skills</Title>
         <IconSkills />
+      </section>
+      <section id="service" className="lg:px-64 md:px-32 px-0">
+        <Title className="w-36">My Service</Title>
+        <Service />
       </section>
       <section id="portfolio" className="my-10">
         <Title className="w-32">Portfolio</Title>
@@ -102,9 +111,9 @@ export default function Home() {
           company={"PT. Pertamina Training and Consulting"}
           date={"July 2023 - present"}
           description={[
-            "Developed 3 websites in 6 months internship. Working with React JS, Next JS, Node JS, and Flutter.",
-            "Working with DevOps team.",
-            "Participate in developing government websites projects.",
+            "Working with React JS, Next JS, and React Native",
+            "Participate in developing Allcare System",
+            "Socializing the use of Allcare System to the provider",
           ]}
         />
         <Experience
@@ -112,9 +121,10 @@ export default function Home() {
           company={"PT. Graha Digital Pratama (Digital Buana)"}
           date={"July 2022 - January 2023"}
           description={[
-            "Developed 3 websites in 6 months internship. Working with React JS, Next JS, Node JS, and Flutter.",
-            "Working with DevOps team.",
-            "Participate in developing government websites projects.",
+            "Developed 3 websites in 6 months internship",
+            "Working with React JS, Next JS, Node JS, and Flutter",
+            "Working with DevOps team",
+            "Participate in developing government websites projects",
           ]}
         />
       </section>
@@ -133,7 +143,19 @@ export default function Home() {
       <footer>
         <hr className="border-[#7B7B7B]" />
         <div className="mt-3 lg:flex lg:justify-between text-[#C3C3C3]">
-          <p className="text-sm">Muhammad Faiz Al Ghozi</p>
+          <div>
+            <p className="text-sm">Muhammad Faiz Al Ghozi</p>
+            <p className="text-sm">
+              Icon illustration from{" "}
+              <a
+                className=" text-blue-500"
+                href="https://flaticon.com"
+                target="_blank"
+              >
+                flaticon.com
+              </a>
+            </p>
+          </div>
           <div>
             <p className="text-sm">
               <span className="font-medium">Email:</span>{" "}
