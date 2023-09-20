@@ -36,7 +36,7 @@ module.exports = [
     description:
       "Comic app is an innovative comic application built with Flutter and Node.js technology. This application allows users to explore, read, and download various types of comics from various sources easily. The features of this app are extensive Comic Collection, latest Web Scraping, history last chapter read",
     tools: ["Flutter", "Node JS"],
-    url: "https://github.com/Al-Ghozy03/komikcast-api",
+    url: "https://github.com/Al-Ghozy03/komik_app",
     isPrivate: false,
     thumbnail: comic,
   },
