@@ -29,7 +29,7 @@ module.exports = [
     tools: ["Next JS"],
     url: "https://banper.kemenparekraf.go.id/",
     isPrivate: false,
-    thumbnail: katakreatif,
+    thumbnail: banper,
   },
   {
     title: "Comic App",
