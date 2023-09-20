@@ -13,11 +13,11 @@ export default function CardPortfolio({ title, description, tools, url,thumbnail
         className="bg-[#212121] px-6 py-4 rounded-xl hover:bg-[#2B2B2B] cursor-pointer transition hover:-translate-y-2"
       >
         <h1 className="font-semibold text-lg">{title}</h1>
-        {description.length <= 200 ? (
+        {description.length <= 135 ? (
           <p className="text-[0.800rem]">{description}</p>
         ) : (
           <p className="text-[0.800rem]">
-            {description.substring(0, description.length - 315)}...{" "}
+            {description.substring(0, 135)}...{" "}
             <span className="font-semibold text-[#3F50EA]">See more</span>
           </p>
         )}
