@@ -6,7 +6,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   title: "Muhammad Faiz Al Ghozi - Portfolio",
   description:
-    "Hi, I'm Muhammad Faiz Al Ghozi. I am a recent graduate who has an interest in working in the field of programming. Accustomed to using various programming languages such as HTML, CSS, Javascript and using Frameworks such as React JS, Next JS, Node JS, Flutter. Honest, disciplined and able to work well in a team. Has an internship experience of 6 months and has participated in making web government websites.",
+    "I am a Software Engineer with over 1 year of experience. I am also a student at Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA) with a strong passion for programming. I possess in depth knowledge and skills in technologies such as React JS, Next JS, Node JS, and Flutter. My experience encompasses a variety of projects, including active participation in developing web projects for government institutions. I enjoy combining my academic insights with the practical understanding I've gained from working in the industry. I am always eager to continue learning and innovating towards achieving optimal and high quality software solutions",
 };
 
 export default function RootLayout({ children }) {
