@@ -18,7 +18,7 @@ export default function Skills() {
       <Title>skills</Title>
       <div className="flex flex-wrap lg:space-x-7 justify-center mt-5 w-1/2 mx-auto">
         {skills.map((v, i) => (
-          <Card>{v}</Card>
+          <Card key={i}>{v}</Card>
         ))}
       </div>
     </section>

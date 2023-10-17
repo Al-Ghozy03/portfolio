@@ -21,7 +21,7 @@ function Card({ title, img }) {
   return (
     <div className="bg-gradient-to-r from-[#834D9B] to-[#D04ED6] p-px flex justify-center items-center rounded-xl">
       <div className="w-full bg-[#161616] p-8 rounded-xl flex flex-col justify-center items-center">
-        <Image src={img} height={100} />
+        <Image src={img} height={100} alt={title} />
         <h3 className="text-xl font-semibold mt-5">{title}</h3>
       </div>
     </div>

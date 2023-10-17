@@ -28,7 +28,7 @@ export default function About() {
         </button>
       </div>
       <div className="hidden lg:flex">
-        <Image src={laptop} height={520} />
+        <Image src={laptop} alt="laptop" height={520} />
       </div>
     </section>
   );
