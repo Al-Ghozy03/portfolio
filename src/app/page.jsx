@@ -2,6 +2,7 @@
 import Navbar from "./components/navbar";
 import circle from "./assets/img/circle.png";
 import About from "./components/about";
+import MyServices from "./components/my_service";
 
 export default function Home() {
   const openEmail = () => {
@@ -13,6 +14,7 @@ export default function Home() {
       <Navbar />
       <main className="px-10 pb-7 w-full bg-cover">
         <About />
+        <MyServices />
       </main>
     </>
   );
