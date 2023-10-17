@@ -5,7 +5,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="lg:flex lg:justify-between lg:items-center lg:space-x-10"
+      className="lg:flex lg:justify-between lg:items-center lg:space-x-10 h-screen"
     >
       <div className="lg:w-2/4">
         <h1 className=" text-6xl">

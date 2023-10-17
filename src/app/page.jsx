@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <main className="px-10 pb-7 pt-28 w-full bg-cover">
+      <main className="px-10 pb-7 w-full bg-cover">
         <About />
       </main>
     </>
