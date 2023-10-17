@@ -1,6 +1,7 @@
 "use client";
 import Navbar from "./components/navbar";
 import circle from "./assets/img/circle.png";
+import About from "./components/about";
 
 export default function Home() {
   const openEmail = () => {
@@ -8,8 +9,11 @@ export default function Home() {
     window.location.href = mailTo;
   };
   return (
-    <main className="px-10 py-7 w-full bg-cover">
+    <>
       <Navbar />
-    </main>
+      <main className="px-10 pb-7 pt-28 w-full bg-cover">
+        <About />
+      </main>
+    </>
   );
 }
