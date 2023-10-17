@@ -23,8 +23,8 @@ export default function About() {
           Has an internship experience of 6 months and has participated in
           making web government websites.
         </p>
-        <button className="bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold px-6 py-3 rounded-full">
-          Download my cv
+        <button className="bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold px-6 py-3 rounded-full hover:scale-110 transition">
+          Download My CV
         </button>
       </div>
       <div className="hidden lg:flex">
