@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png";
 
 export default function Navbar() {
   return (
-    <header className="flex justify-between items-center fixed bg-dark w-full px-10 py-4">
+    <header className="flex justify-between items-center fixed bg-dark w-full px-28 py-4">
       <Image src={logo} alt="logo" height={30} priority />
       <nav className="capitalize lg:flex lg:space-x-5 lg:text-sm items-center">
         <p>about</p>

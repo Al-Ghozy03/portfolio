@@ -1,11 +1,13 @@
 import Image from "next/image";
 import laptop from "../assets/img/laptop.png";
+import circle from "../assets/img/circle.png"
 
 export default function About() {
   return (
     <section
       id="about"
-      className="lg:flex lg:justify-between lg:items-center lg:space-x-10 h-screen"
+      className="lg:flex lg:justify-between lg:items-center lg:space-x-10 h-screen bg-right bg-no-repeat px-28"
+      style={{ backgroundImage: `url(${circle.src})` }}
     >
       <div className="lg:w-2/4">
         <h1 className=" text-6xl">

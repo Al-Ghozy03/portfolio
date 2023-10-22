@@ -31,7 +31,7 @@ export default function WorkExperience() {
   const [index, setIndex] = useState(0);
 
   return (
-    <section id="word_experience" className="mt-10">
+    <section id="word_experience" className="mt-28">
       <Title>work experiences</Title>
       <div className="flex space-x-10 mt-5">
         <div className="flex flex-col">
