@@ -13,13 +13,17 @@ export default function PortFolio() {
             i % 2 !== 0 && "flex-row-reverse"
           } mb-10 items-center space-x-16`}
         >
-          <Image src={v.thumbnail} className="h-[24rem] w-[24rem] rounded-xl" />
-          <div className={i % 2 === 0 && "text-right"}>
+          <Image
+            src={v.thumbnail}
+            alt={v.title}
+            className="h-[24rem] w-[24rem] rounded-xl"
+          />
+          <div className={`${i % 2 === 0 && "text-right"}`}>
             <p className="text-purple-500">Featured project</p>
             <h1 className="text-3xl font-semibold my-2 capitalize">
               {v.title}
             </h1>
-            <p className="">{v.description}</p>
+            <p>{v.description}</p>
             <div
               className={`flex space-x-5 mt-5 ${i % 2 === 0 && "justify-end"}`}
             >
