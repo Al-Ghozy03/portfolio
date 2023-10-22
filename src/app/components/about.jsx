@@ -1,6 +1,6 @@
 import Image from "next/image";
 import laptop from "../assets/img/laptop.png";
-import circle from "../assets/img/circle.png"
+import circle from "../assets/img/circle.png";
 
 export default function About() {
   return (
@@ -18,12 +18,16 @@ export default function About() {
           </span>
         </h1>
         <p className="my-3">
-          I am a recent graduate who has an interest in working in the field of
-          programming. Accustomed to using various programming languages such as
-          HTML, CSS, Javascript and using Frameworks such as React JS, Next JS,
-          Node JS, Flutter. Honest, disciplined and able to work well in a team.
-          Has an internship experience of 6 months and has participated in
-          making web government websites.
+          I am a Software Engineer with over 1 year of experience. I am also a
+          student at Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA) with a
+          strong passion for programming. I possess in-depth knowledge and
+          skills in technologies such as React JS, Next JS, Node JS, and
+          Flutter. My experience encompasses a variety of projects, including
+          active participation in developing web projects for government
+          institutions. I enjoy combining my academic insights with the
+          practical understanding I've gained from working in the industry. I am
+          always eager to continue learning and innovating towards achieving
+          optimal and high-quality software solutions.
         </p>
         <button className="bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold px-6 py-3 rounded-full hover:scale-110 transition">
           Download My CV
