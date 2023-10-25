@@ -31,7 +31,7 @@ export default function WorkExperience() {
   const [index, setIndex] = useState(0);
 
   return (
-    <section id="word_experiences" className="mt-28">
+    <section id="work_experiences" className="mt-28">
       <Title>work experiences</Title>
       <div className="lg:flex lg:space-x-10 mt-5 lg:text-base text-xs">
         <div className="lg:flex lg:flex-col">
