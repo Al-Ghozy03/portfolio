@@ -4,22 +4,49 @@ import { Fragment, useState } from "react";
 import Image from "next/image";
 import logo from "../assets/img/logo.png";
 import { openEmail } from "../page";
+import { HambergerMenu } from "iconsax-react";
 
 export default function Navbar() {
+  const [isExpand, setIsExpand] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   function openModal() {
     setIsOpen(true);
   }
   return (
-    <header className="flex justify-between items-center fixed bg-dark w-full lg:px-28 px-10 lg:py-4 py-3.5 backdrop-blur-lg bg-opacity-50">
-      <Image
-        src={logo}
-        alt="logo"
-        height={30}
-        priority
-        className="lg:h-[1.875rem] lg:w-[8rem] h-[1.4rem] w-24"
-      />
-      <nav className="capitalize hidden lg:flex lg:space-x-5 lg:text-sm items-center">
+    <>
+      <header className="flex justify-between items-center fixed bg-dark w-full lg:px-28 px-10 lg:py-4 py-3.5 backdrop-blur-lg bg-opacity-50 z-50">
+        <Image
+          src={logo}
+          alt="logo"
+          height={30}
+          priority
+          className="lg:h-[1.875rem] lg:w-[8rem] h-[1.4rem] w-24"
+        />
+        <button className="lg:hidden" onClick={() => setIsExpand(!isExpand)}>
+          <HambergerMenu />
+        </button>
+        <nav className="capitalize hidden lg:flex lg:space-x-5 lg:text-sm items-center">
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#my_services">my services</a>
+          <a href="#work_experiences">work experiences</a>
+          <a href="#portfolio">portfolio</a>
+          <div className="bg-gradient-to-r from-[#834D9B] to-[#D04ED6] p-px flex justify-center items-center rounded-full">
+            <button
+              onClick={openModal}
+              className="w-full hover:bg-gradient-to-r hover:from-[#834D9B] hover:to-[#D04ED6] hover:font-semibold bg-[#161616] px-5 py-2.5 rounded-full"
+            >
+              Contact me
+            </button>
+          </div>
+        </nav>
+        <ContactModal isOpen={isOpen} setIsOpen={setIsOpen} />
+      </header>
+      <nav
+        className={`lg:hidden flex flex-col w-full mt-[3rem] capitalize fixed bg-dark z-40 backdrop-blur-lg bg-opacity-50 text-sm px-10 space-y-2 transitio-max-h duration-300 ease-in-out overflow-hidden ${
+          isExpand ? "max-h-96 pt-5 pb-5" : "max-h-0"
+        }`}
+      >
         <a href="#about">about</a>
         <a href="#skills">skills</a>
         <a href="#my_services">my services</a>
@@ -27,15 +54,17 @@ export default function Navbar() {
         <a href="#portfolio">portfolio</a>
         <div className="bg-gradient-to-r from-[#834D9B] to-[#D04ED6] p-px flex justify-center items-center rounded-full">
           <button
-            onClick={openModal}
+            onClick={() => {
+              openModal();
+              setIsExpand(false);
+            }}
             className="w-full hover:bg-gradient-to-r hover:from-[#834D9B] hover:to-[#D04ED6] hover:font-semibold bg-[#161616] px-5 py-2.5 rounded-full"
           >
             Contact me
           </button>
         </div>
       </nav>
-      <ContactModal isOpen={isOpen} setIsOpen={setIsOpen} />
-    </header>
+    </>
   );
 }
 
@@ -46,7 +75,7 @@ function ContactModal({ isOpen, setIsOpen }) {
 
   return (
     <Transition appear show={isOpen} as={Fragment}>
-      <Dialog as="div" className="relative z-10" onClose={closeModal}>
+      <Dialog as="div" className="relative z-[999]" onClose={closeModal}>
         <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
