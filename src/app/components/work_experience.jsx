@@ -33,12 +33,12 @@ export default function WorkExperience() {
   return (
     <section id="word_experiences" className="mt-28">
       <Title>work experiences</Title>
-      <div className="flex space-x-10 mt-5">
-        <div className="flex flex-col">
+      <div className="lg:flex lg:space-x-10 mt-5 lg:text-base text-xs">
+        <div className="lg:flex lg:flex-col">
           {workExperiences.map((v, i) => (
             <button
               onClick={() => setIndex(i)}
-              className={`text-left ${
+              className={`text-left w-full ${
                 index === i && "bg-dark-transparent"
               } mb-5 flex h-10 justify-start items-center pr-7`}
               key={i}
@@ -53,13 +53,13 @@ export default function WorkExperience() {
           ))}
         </div>
         <div>
-          <h3 className="text-xl font-semibold">
+          <h3 className="lg:text-xl text-lg font-semibold">
             {workExperiences[index].role}
           </h3>
-          <p className="text-sm">
+          <p className="lg:text-sm text-xs">
             {workExperiences[index].from} - {workExperiences[index].to}
           </p>
-          <ul className="list-disc text-sm mt-2 ml-4">
+          <ul className="list-disc lg:text-sm text-xs mt-2 ml-4">
             {workExperiences[index].activities.map((v, i) => (
               <li key={i}>{v}</li>
             ))}

@@ -4,10 +4,16 @@ import { openEmail } from "../page";
 
 export default function Footer() {
   return (
-    <footer className="bg-dark-transparent w-full px-28 py-7 flex justify-between">
+    <footer className="bg-dark-transparent w-full lg:px-28 px-10 py-7 lg:flex lg:justify-between">
       <div>
-        <Image src={logo} alt="logo" height={30} priority />
-        <p className="text-sm mt-1">
+        <Image
+          src={logo}
+          alt="logo"
+          height={30}
+          priority
+          className="lg:h-[1.875rem] lg:w-[8rem] h-[1.4rem] w-24"
+        />
+        <p className="lg:text-sm text-xs mt-1">
           Illustration from{" "}
           <a
             className="text-blue-500"
@@ -26,11 +32,15 @@ export default function Footer() {
           </a>
         </p>
       </div>
-      <div className="flex flex-col">
-        <button className="text-sm" onClick={openEmail}>
+      <div>
+        <p className="lg:text-sm text-xs" onClick={openEmail}>
           muhammadfaizalghozi1@gmail.com
-        </button>
-        <a href="https://wa.me/6287818197732" target="_blank" className="text-sm mt-1">
+        </p>
+        <a
+          href="https://wa.me/6287818197732"
+          target="_blank"
+          className="lg:text-sm text-xs mt-1"
+        >
           +62 878 1819 7732
         </a>
       </div>

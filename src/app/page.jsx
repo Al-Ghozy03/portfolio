@@ -19,7 +19,7 @@ export default function Home() {
       <Navbar />
       <main className="pb-7 w-full">
         <About />
-        <div className="px-28">
+        <div className="lg:px-28 px-10">
           <MyServices />
           <Skills />
           <WorkExperience />

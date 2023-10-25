@@ -9,23 +9,23 @@ export default function PortFolio() {
       {data.map((v, i) => (
         <div
           key={i}
-          className={`flex ${
-            i % 2 !== 0 && "flex-row-reverse"
-          } mb-10 items-center space-x-16`}
+          className={`lg:flex lg:mt-16 mt-8 ${
+            i % 2 !== 0 && "lg:flex-row-reverse"
+          } mb-10 items-center lg:space-x-16`}
         >
           <Image
             src={v.thumbnail}
             alt={v.title}
-            className="h-[24rem] w-[24rem] rounded-xl"
+            className="lg:h-[24rem] lg:w-[24rem] rounded-xl"
           />
-          <div className={`${i % 2 === 0 && "text-right"}`}>
-            <p className="text-purple-500">Featured project</p>
-            <h1 className="text-3xl font-semibold my-2 capitalize">
+          <div className={`${i % 2 === 0? "lg:text-right text-justify":"lg:text-left text-justify"} lg:mt-0 mt-5`}>
+            <p className="text-purple-500 lg:text-base text-xs">Featured project</p>
+            <h1 className="lg:text-3xl font-semibold my-2 capitalize">
               {v.title}
             </h1>
-            <p>{v.description}</p>
+            <p className="lg:text-base text-xs">{v.description}</p>
             <div
-              className={`flex space-x-5 mt-5 ${i % 2 === 0 && "justify-end"}`}
+              className={`flex space-x-5 mt-5 ${i % 2 === 0 && "lg:justify-end"}`}
             >
               {v.tools.map((j, key) => (
                 <Skill key={key}>{j}</Skill>
@@ -41,7 +41,7 @@ export default function PortFolio() {
 function Skill({ children }) {
   return (
     <div className="bg-dark-transparent px-5 py-2 rounded-full">
-      <p>{children}</p>
+      <p className="lg:text-base text-xs">{children}</p>
     </div>
   );
 }
