@@ -1,6 +1,7 @@
 import Title from "@/components/title";
 import data from "../../variable/portfolio";
 import Image from "next/image";
+import { ExportSquare } from "iconsax-react";
 
 export default function PortFolio() {
   return (
@@ -18,14 +19,37 @@ export default function PortFolio() {
             alt={v.title}
             className="lg:h-[24rem] lg:w-[24rem] rounded-xl"
           />
-          <div className={`${i % 2 === 0? "lg:text-right text-justify":"lg:text-left text-justify"} lg:mt-0 mt-5`}>
-            <p className="text-purple-500 lg:text-base text-xs">Featured project</p>
-            <h1 className="lg:text-3xl font-semibold my-2 capitalize">
-              {v.title}
-            </h1>
+          <div
+            className={`${
+              i % 2 === 0
+                ? "lg:text-right text-justify"
+                : "lg:text-left text-justify"
+            } lg:mt-0 mt-5`}
+          >
+            <p className="text-purple-500 lg:text-base text-xs">
+              Featured project
+            </p>
+            <div
+              className={`flex items-center space-x-5 ${
+                i % 2 === 0 && "justify-end"
+              }`}
+            >
+              <a
+                href={v.url}
+                target="_blank"
+                className="bg-dark-transparent hover:bg-gray-800 p-2 rounded-lg"
+              >
+                <ExportSquare size={20} />
+              </a>
+              <h1 className="lg:text-3xl font-semibold my-2 capitalize">
+                {v.title}
+              </h1>
+            </div>
             <p className="lg:text-base text-xs">{v.description}</p>
             <div
-              className={`flex space-x-5 mt-5 ${i % 2 === 0 && "lg:justify-end"}`}
+              className={`flex space-x-5 mt-5 ${
+                i % 2 === 0 && "lg:justify-end"
+              }`}
             >
               {v.tools.map((j, key) => (
                 <Skill key={key}>{j}</Skill>
