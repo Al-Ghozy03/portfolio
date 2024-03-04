@@ -29,7 +29,14 @@ export default function About() {
           always eager to continue learning and innovating towards achieving
           optimal and high-quality software solutions.
         </p>
-        <button className="bg-gradient-to-r lg:text-base text-xs from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold lg:px-6 lg:py-3 px-4 py-2.5 rounded-full hover:scale-110 transition">
+        <button
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1f-CayiURoLGhCHXFlcw8V5IPZ-6hvPSj/view?usp=sharing"
+            )
+          }
+          className="bg-gradient-to-r lg:text-base text-xs from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold lg:px-6 lg:py-3 px-4 py-2.5 rounded-full hover:scale-110 transition"
+        >
           Download My CV
         </button>
       </div>
