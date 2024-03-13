@@ -4,6 +4,7 @@ import Image from "next/image";
 import github from "@/app/assets/svg/github.svg";
 import linkedin from "@/app/assets/svg/linkedin.svg";
 import whatsapp from "@/app/assets/svg/whatsapp.svg";
+import Button from "../fragments/button";
 
 export default function Landing() {
   return (
@@ -18,19 +19,16 @@ export default function Landing() {
           </span>
         </h1>
         <p className="text-xl mt-3 mb-6">Fullstack Developer</p>
-        <div className="flex flex-col w-64 relative">
-          <div className="bg-[#FF644D] rounded-full h-[3.7rem] relative blur-lg opacity-50" />
-          <button
-            onClick={() =>
-              window.open(
-                "https://drive.google.com/file/d/1f-CayiURoLGhCHXFlcw8V5IPZ-6hvPSj/view"
-              )
-            }
-            className="text-white font-semibold text-xl bg-[#FF644D] px-7 py-4 rounded-full absolute w-full transition-all hover:scale-110"
-          >
-            Download My CV
-          </button>
-        </div>
+        <Button
+          className={"w-64"}
+          onClick={() =>
+            window.open(
+              "https://drive.google.com/file/d/1f-CayiURoLGhCHXFlcw8V5IPZ-6hvPSj/view"
+            )
+          }
+        >
+          Download My CV
+        </Button>
       </div>
       <div className="flex">
         <Image
@@ -44,13 +42,13 @@ export default function Landing() {
             href="https://www.linkedin.com/in/muhammad-faiz-al-ghozi"
             target="_blank"
           >
-            <Image src={linkedin} className="h-9 w-9" />
+            <Image src={linkedin} className="h-9 w-9" alt="linkedin" />
           </a>
           <a href="https://github.com/Al-Ghozy03" target="_blank">
-            <Image src={github} className="h-9 w-9" />
+            <Image src={github} className="h-9 w-9" alt="github" />
           </a>
           <a href="https://wa.me/6287818197732" target={"_blank"}>
-            <Image src={whatsapp} className="h-9 w-9" />
+            <Image src={whatsapp} className="h-9 w-9" alt="whatsapp" />
           </a>
         </div>
       </div>

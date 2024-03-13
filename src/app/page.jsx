@@ -1,16 +1,13 @@
 "use client";
 import dot from "@/app/assets/img/dot.png";
 import Image from "next/image";
-
 import Landing from "./components/landing";
-import AOS from "aos";
 
 export const openEmail = () => {
   const mailTo = `mailto:muhammadfaizalghozi1@gmail.com?`;
   window.location.href = mailTo;
 };
-AOS.init();
-import "aos/dist/aos.css";
+import About from "./components/about";
 
 export default function Home() {
   return (
@@ -20,6 +17,10 @@ export default function Home() {
       </div>
       <Landing />
       <div className="px-20 right-0 absolute">
+        <Image src={dot} alt="dot" />
+      </div>
+      <About />
+      <div className="px-20 py-20 absolute">
         <Image src={dot} alt="dot" />
       </div>
     </main>
