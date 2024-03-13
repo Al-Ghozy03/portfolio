@@ -8,6 +8,7 @@ export const openEmail = () => {
   window.location.href = mailTo;
 };
 import About from "./components/about";
+import Services from "./components/services";
 
 export default function Home() {
   return (
@@ -20,7 +21,11 @@ export default function Home() {
         <Image src={dot} alt="dot" />
       </div>
       <About />
-      <div className="px-20 py-20 absolute">
+      <div className="px-20 absolute">
+        <Image src={dot} alt="dot" />
+      </div>
+      <Services />
+      <div className="px-20 right-0 absolute">
         <Image src={dot} alt="dot" />
       </div>
     </main>
