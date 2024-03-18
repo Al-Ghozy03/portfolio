@@ -10,6 +10,7 @@ export const openEmail = () => {
 import About from "./components/about";
 import Services from "./components/services";
 import Skills from "./components/skills";
+import WorkExperiences from "./components/work_experiences";
 
 export default function Home() {
   return (
@@ -30,6 +31,10 @@ export default function Home() {
         <Image src={dot} alt="dot" />
       </div>
       <Skills />
+      <div className="px-20 absolute mt-14">
+        <Image src={dot} alt="dot" />
+      </div>
+      <WorkExperiences />
     </main>
   );
 }
