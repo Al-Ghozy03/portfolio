@@ -11,6 +11,7 @@ import About from "./components/about";
 import Services from "./components/services";
 import Skills from "./components/skills";
 import WorkExperiences from "./components/work_experiences";
+import Projects from "./components/projects";
 
 export default function Home() {
   return (
@@ -35,6 +36,13 @@ export default function Home() {
         <Image src={dot} alt="dot" />
       </div>
       <WorkExperiences />
+      <div className="px-20 right-0 absolute">
+        <Image src={dot} alt="dot" />
+      </div>
+      <Projects />
+      <div className="px-20 absolute">
+        <Image src={dot} alt="dot" />
+      </div>
     </main>
   );
 }
