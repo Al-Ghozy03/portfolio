@@ -1,5 +1,5 @@
 "use client";
-import dot from "@/app/assets/img/dot.png";
+import dot from "./assets/img/dot.png";
 import Image from "next/image";
 import Landing from "./components/landing";
 
@@ -9,6 +9,7 @@ export const openEmail = () => {
 };
 import About from "./components/about";
 import Services from "./components/services";
+import Skills from "./components/skills";
 
 export default function Home() {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <div className="px-20 right-0 absolute">
         <Image src={dot} alt="dot" />
       </div>
+      <Skills />
     </main>
   );
 }

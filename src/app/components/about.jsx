@@ -1,5 +1,5 @@
 import Image from "next/image";
-import bg from "@/app/assets/img/about.jpg";
+import bg from "../assets/img/about.jpg";
 import Button from "../fragments/button";
 
 export default function About() {

@@ -1,9 +1,9 @@
-import thumbnail from "@/app/assets/img/person-with-laptop.jpg";
-import dot from "@/app/assets/img/dot.png";
+import thumbnail from "../assets/img/person-with-laptop.jpg";
+import dot from "../assets/img/dot.png";
 import Image from "next/image";
-import github from "@/app/assets/svg/github.svg";
-import linkedin from "@/app/assets/svg/linkedin.svg";
-import whatsapp from "@/app/assets/svg/whatsapp.svg";
+import github from "../assets/svg/github.svg";
+import linkedin from "../assets/svg/linkedin.svg";
+import whatsapp from "../assets/svg/whatsapp.svg";
 import Button from "../fragments/button";
 
 export default function Landing() {
