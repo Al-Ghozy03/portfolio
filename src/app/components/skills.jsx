@@ -2,18 +2,54 @@ import Image from "next/image";
 
 export default function Skills() {
   const skills = [
-    require("../assets/svg/typescript.svg"),
-    require("../assets/svg/javascript.svg"),
-    require("../assets/svg/react.svg"),
-    require("../assets/svg/next.svg"),
-    require("../assets/svg/flutter.svg"),
-    require("../assets/svg/nodejs.svg"),
-    require("../assets/svg/express.svg"),
-    require("../assets/svg/nestjs.svg"),
-    require("../assets/svg/graphql.svg"),
-    require("../assets/svg/mysql.svg"),
-    require("../assets/svg/mongodb.svg"),
-    require("../assets/svg/tailwind.svg"),
+    {
+      label: "typescript",
+      icon: require("../assets/svg/typescript.svg"),
+    },
+    {
+      label: "javascript",
+      icon: require("../assets/svg/javascript.svg"),
+    },
+    {
+      label: "react js",
+      icon: require("../assets/svg/react.svg"),
+    },
+    {
+      label: "next js",
+      icon: require("../assets/svg/next.svg"),
+    },
+    {
+      label: "flutter",
+      icon: require("../assets/svg/flutter.svg"),
+    },
+    {
+      label: "node js",
+      icon: require("../assets/svg/nodejs.svg"),
+    },
+    {
+      label: "express js",
+      icon: require("../assets/svg/express.svg"),
+    },
+    {
+      label: "tailwind css",
+      icon: require("../assets/svg/tailwind.svg"),
+    },
+    {
+      label: "nest js",
+      icon: require("../assets/svg/nestjs.svg"),
+    },
+    {
+      label: "graphql",
+      icon: require("../assets/svg/graphql.svg"),
+    },
+    {
+      label: "mysql",
+      icon: require("../assets/svg/mysql.svg"),
+    },
+    {
+      label: "mongodb",
+      icon: require("../assets/svg/mongodb.svg"),
+    },
   ];
   return (
     <section
@@ -22,7 +58,7 @@ export default function Skills() {
     >
       <div className="grid grid-cols-5 gap-y-8 gap-x-14" data-aos="fade-right">
         {skills.map((v, k) => (
-          <Image src={v} key={k} className="h-14 w-14" />
+          <Image src={v.icon} alt={v.label} key={k} className="h-14 w-14" />
         ))}
       </div>
       <div data-aos="fade-left">
