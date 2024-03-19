@@ -12,6 +12,7 @@ import Services from "./components/services";
 import Skills from "./components/skills";
 import WorkExperiences from "./components/work_experiences";
 import Projects from "./components/projects";
+import Contact from "./components/contact";
 
 export default function Home() {
   return (
@@ -43,6 +44,7 @@ export default function Home() {
       <div className="px-20 absolute">
         <Image src={dot} alt="dot" />
       </div>
+      <Contact />
     </main>
   );
 }
