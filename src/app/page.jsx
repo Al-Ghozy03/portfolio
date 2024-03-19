@@ -29,31 +29,31 @@ export default function Home() {
   return (
     <main className="w-full">
       <div className="px-20 py-20 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <Landing />
       <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <About />
       <div className="px-20 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <Services />
       <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <Skills />
       <div className="px-20 absolute mt-14">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <WorkExperiences />
       <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <Projects />
       <div className="px-20 absolute">
-        <Image src={dot} alt="dot" />
+        <Image src={dot} alt="dot" className="animate-float" />
       </div>
       <Contact />
       <footer className="flex justify-between px-20 bg-[#F7F8F9] mt-20 py-10">

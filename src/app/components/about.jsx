@@ -4,7 +4,7 @@ import Button from "../fragments/button";
 
 export default function About() {
   return (
-    <section id="about" className="flex justify-between px-20 py-10">
+    <section id="about" className="flex justify-between px-20 mt-20">
       <div className="w-1/2" data-aos="fade-right">
         <h1 className="text-4xl font-bold">
           About <span className="text-[#FF644D]">me</span>
