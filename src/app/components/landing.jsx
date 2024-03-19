@@ -41,7 +41,10 @@ export default function Landing() {
             className="h-[43rem] w-[43rem]"
           />
         </a>
-        <div className="flex flex-col items-center space-y-3">
+        <div
+          data-aos="zoom-out"
+          className="flex flex-col items-center space-y-3"
+        >
           <div className="w-0.5 h-1/2 bg-red-400" />
           <a
             href="https://www.linkedin.com/in/muhammad-faiz-al-ghozi"
