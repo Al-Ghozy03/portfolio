@@ -4,7 +4,10 @@ import Button from "../fragments/button";
 
 export default function About() {
   return (
-    <section id="about" className="flex justify-between lg:px-20 px-10 lg:mt-20 mt-10 lg:mb-0 mb-10">
+    <section
+      id="about"
+      className="flex justify-between lg:px-20 px-10 lg:mt-20 mt-10 lg:mb-0 mb-10"
+    >
       <div className="lg:w-1/2" data-aos="fade-right">
         <h1 className="lg:text-4xl text-3xl font-bold">
           About <span className="text-[#FF644D]">me</span>
@@ -18,7 +21,9 @@ export default function About() {
           Continuously learning and innovating for top-notch software solutions
           drives me.
         </p>
-        <Button className={"lg:w-48 w-full"}>Let's talk</Button>
+        <a href="#contact">
+          <Button className={"lg:w-48 w-full"}>Let's talk</Button>
+        </a>
       </div>
       <a
         data-aos="fade-left"
