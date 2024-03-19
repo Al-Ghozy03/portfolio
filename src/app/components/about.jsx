@@ -1,48 +1,36 @@
 import Image from "next/image";
-import laptop from "../assets/img/laptop.png";
-import circle from "../assets/img/circle.png";
+import bg from "../assets/img/about.jpg";
+import Button from "../fragments/button";
 
 export default function About() {
   return (
-    <section
-      id="about"
-      className="lg:flex lg:justify-between lg:items-center lg:space-x-10 lg:h-screen h-[75vh] bg-right bg-no-repeat lg:px-28 px-10 pt-20 lg:pt-0"
-      style={{ backgroundImage: `url(${circle.src})` }}
-    >
-      <div className="lg:w-2/4">
-        <h1 className=" lg:text-6xl text-3xl lg:text-left text-center">
-          I'm{" "}
-          <span className="font-bold bg-clip-text bg-gradient-to-r from-[#8A2387] via-[#E94057] to-[#F27121] text-transparent">
-            Muhammad Faiz
-            <br className="lg:flex hidden" /> Al Ghozi
-          </span>
+    <section id="about" className="flex justify-between lg:px-20 px-10 lg:mt-20 mt-10 lg:mb-0 mb-10">
+      <div className="lg:w-1/2" data-aos="fade-right">
+        <h1 className="lg:text-4xl text-3xl font-bold">
+          About <span className="text-[#FF644D]">me</span>
         </h1>
-        <p className="my-3 lg:text-base text-xs lg:text-left text-justify">
-          I am a Software Engineer with over 1 year of experience. I am also a
-          student at Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA) with a
-          strong passion for programming. I possess in-depth knowledge and
-          skills in technologies such as React JS, Next JS, Node JS, and
-          Flutter. My experience encompasses a variety of projects, including
-          active participation in developing web projects for government
-          institutions. I enjoy combining my academic insights with the
-          practical understanding I've gained from working in the industry. I am
-          always eager to continue learning and innovating towards achieving
-          optimal and high-quality software solutions.
+        <p className="lg:text-lg mt-3 mb-5 text-base lg:text-left text-justify">
+          I'm a Software Engineer with 1+ year of experience and a student at
+          Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA). I'm passionate
+          about programming, specializing in React JS, Next JS, Node JS, and
+          Flutter. I've worked on diverse projects, including government web
+          projects, blending academic knowledge with industry experience.
+          Continuously learning and innovating for top-notch software solutions
+          drives me.
         </p>
-        <button
-          onClick={() =>
-            window.open(
-              "https://drive.google.com/file/d/1f-CayiURoLGhCHXFlcw8V5IPZ-6hvPSj/view?usp=sharing"
-            )
-          }
-          className="bg-gradient-to-r lg:text-base text-xs from-[#8A2387] via-[#E94057] to-[#F27121] font-semibold lg:px-6 lg:py-3 px-4 py-2.5 rounded-full hover:scale-110 transition"
-        >
-          Download My CV
-        </button>
+        <Button className={"lg:w-48 w-full"}>Let's talk</Button>
       </div>
-      <div className="hidden lg:flex">
-        <Image src={laptop} alt="laptop" height={520} />
-      </div>
+      <a
+        data-aos="fade-left"
+        target="_blank"
+        href="https://www.freepik.com/free-vector/hand-coding-concept-illustration_21532468.htm"
+      >
+        <Image
+          src={bg}
+          alt="about-me"
+          className="lg:h-[33rem] lg:w-[33rem] lg:inline hidden"
+        />
+      </a>
     </section>
   );
 }
