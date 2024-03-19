@@ -7,19 +7,18 @@ import Button from "../fragments/button";
 
 export default function Landing() {
   return (
-    <section className="h-screen flex items-center justify-between px-20">
+    <section className="h-screen flex items-center justify-between lg:px-20 px-10">
       <div data-aos="fade-right">
-        <h1 className="text-5xl">
+        <h1 className="lg:text-5xl text-3xl">
           Hi, i'm{" "}
           <span className="font-bold text-[#FF644D]">
-            Muhammad Faiz Al
-            <br />
+            Muhammad Faiz Al <br className="lg:inline hidden" />
             Ghozi
           </span>
         </h1>
-        <p className="text-xl mt-3 mb-6">Fullstack Developer</p>
+        <p className="lg:text-xl text-lg mt-3 mb-6">Fullstack Developer</p>
         <Button
-          className={"w-64"}
+          className={"lg:w-64 w-full"}
           onClick={() =>
             window.open(
               "https://drive.google.com/file/d/1f-CayiURoLGhCHXFlcw8V5IPZ-6hvPSj/view"
@@ -38,12 +37,12 @@ export default function Landing() {
           <Image
             src={thumbnail}
             alt={"thumbnail"}
-            className="h-[43rem] w-[43rem]"
+            className="lg:h-[43rem] lg:w-[43rem] lg:inline hidden"
           />
         </a>
         <div
           data-aos="zoom-out"
-          className="flex flex-col items-center space-y-3"
+          className="lg:flex flex-col items-center space-y-3 hidden"
         >
           <div className="w-0.5 h-1/2 bg-red-400" />
           <a

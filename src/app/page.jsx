@@ -28,38 +28,44 @@ export default function Home() {
   }, []);
   return (
     <main className="w-full">
-      <div className="px-20 py-20 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 lg:py-20 py-10 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <Landing />
-      <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 right-0 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <About />
-      <div className="px-20 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <Services />
-      <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 right-0 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <Skills />
-      <div className="px-20 absolute mt-14">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 absolute mt-14">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <WorkExperiences />
-      <div className="px-20 right-0 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 right-0 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <Projects />
-      <div className="px-20 absolute">
-        <Image src={dot} alt="dot" className="animate-float" />
+      <div className="lg:px-20 px-10 absolute">
+        <Image src={dot} alt="dot" className="animate-float h-8 w-10" />
       </div>
       <Contact />
-      <footer className="flex justify-between px-20 bg-[#F7F8F9] mt-20 py-10">
+      <footer className="lg:flex lg:justify-between lg:px-20 px-10 bg-[#F7F8F9] mt-20 py-10">
         <div>
-          <Image src={logo} alt="Muhammad Faiz Al Ghozi" />
-          <p className="mt-1">
+          <Image
+            src={logo}
+            alt="logo"
+            height={30}
+            priority
+            className="lg:h-[1.875rem] lg:w-[8rem] h-[1.8rem] w-28"
+          />
+          <p className="lg:text-base text-sm mt-1">
             Illustration from{" "}
             <span className="font-bold">
               <a target="_blank" href="https://freepik.com">
@@ -69,11 +75,19 @@ export default function Home() {
           </p>
         </div>
         <div className="flex flex-col">
-          <h3 className="text-lg font-semibold">My Contacts</h3>
-          <a target="_blank" href="mailto:muhammadfaizalghozi1@gmail.com">
+          <h3 className="text-lg font-semibold lg:mt-0 mt-3">My Contacts</h3>
+          <a
+            className="lg:text-base text-sm"
+            target="_blank"
+            href="mailto:muhammadfaizalghozi1@gmail.com"
+          >
             muhammadfaizalghozi1@gmail.com
           </a>
-          <a target="_blank" href="wa.me/6287818197732">
+          <a
+            className="lg:text-base text-sm"
+            target="_blank"
+            href="https://wa.me/6287818197732"
+          >
             +62 878 1819 7732
           </a>
         </div>

@@ -54,20 +54,31 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="flex px-20 justify-between items-center mt-16"
+      className="flex lg:flex-row flex-col-reverse lg:px-20 px-10 lg:justify-between lg:items-center mt-16"
     >
-      <div className="grid grid-cols-5 gap-y-8 gap-x-14" data-aos="fade-right">
+      <div
+        className="grid lg:grid-cols-5 grid-cols-3 gap-y-8 gap-x-14"
+         data-aos="fade-right"
+      >
         {skills.map((v, k) => (
-          <Image src={v.icon} alt={v.label} key={k} className="h-14 w-14" />
+          <Image
+            src={v.icon}
+            alt={v.label}
+            key={k}
+            className="lg:h-14 lg:w-14 h-10 w-10"
+          />
         ))}
       </div>
-      <div data-aos="fade-left">
-        <h1 className="text-4xl font-bold text-right">
+      <div
+        className="lg:mb-0 mb-5"
+        data-aos="fade-left"
+      >
+        <h1 className="lg:text-4xl text-3xl font-bold lg:text-right">
           My <span className="text-[#FF644D]">Skills</span>
         </h1>
-        <p className="text-xl text-right mt-3 leading-6">
+        <p className="lg:text-xl lg:text-right lg:mt-3 mt-2 leading-6">
           Explore the diverse skills I bring to the
-          <br />
+          <br className="lg:inline hidden" />
           projects I undertake
         </p>
       </div>

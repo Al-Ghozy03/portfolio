@@ -2,20 +2,26 @@ import Card from "../fragments/card";
 
 export default function Services() {
   return (
-    <section id="services" className="px-20 pt-20 pb-10">
-      <h1 className="text-4xl font-bold text-right" data-aos="fade-left">
+    <section id="services" className="lg:px-20 px-10 lg:mt-20 mt-24 pb-10">
+      <h1
+        className="lg:text-4xl text-3xl font-bold lg:text-right"
+        data-aos="fade-left"
+      >
         <span className="text-[#FF644D]">Let's</span> work together!{" "}
-        <span className="text-[#FF644D]">Discover</span> the
-        <br />
+        <span className="text-[#FF644D]">Discover</span> the {""}
+        <br className="lg:inline-block hidden" />
         services i can offer
       </h1>
-      <div className="grid grid-cols-3 mt-10 gap-x-10" data-aos="fade-up">
+      <div
+        className="grid lg:grid-cols-3 mt-10 lg:gap-x-10 gap-y-5"
+        data-aos="fade-up"
+      >
         <Card
           icon={
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
-              className="h-8 w-8 text-[#FF644D]"
+              className="lg:h-8 lg:w-8 h-7 w-7 text-[#FF644D]"
             >
               <path
                 fill="currentColor"
@@ -52,7 +58,7 @@ export default function Services() {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 16 16"
-              className="h-7 w-7 text-[#FF644D]"
+              className="lg:h-7 lg:w-7 h-6 w-6 text-[#FF644D]"
             >
               <g fill="currentColor">
                 <path d="M1.333 2.667C1.333 1.194 4.318 0 8 0s6.667 1.194 6.667 2.667V4c0 1.473-2.985 2.667-6.667 2.667S1.333 5.473 1.333 4z"></path>

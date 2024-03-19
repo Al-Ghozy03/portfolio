@@ -1,7 +1,13 @@
 export default function WorkExperiences() {
   return (
-    <section id="work-experience" className="px-20 mt-36 flex space-x-52">
-      <h1 className="text-4xl font-bold text-[#FF644D]" data-aos="fade-right">
+    <section
+      id="work-experience"
+      className="lg:px-20 px-10 lg:mt-36 mt-28 lg:flex lg:space-x-52"
+    >
+      <h1
+        className="lg:text-4xl text-3xl font-bold text-[#FF644D] lg:mb-0 mb-3"
+        data-aos="fade-right"
+      >
         Work <span className="text-black">Experiences</span>
       </h1>
       <div className="flex flex-col" data-aos="fade-up">
@@ -41,14 +47,16 @@ function Stepper({ from, until, title, company, desc }) {
         <div className="w-0.5 h-full bg-[#FF644D]" />
       </div>
       <div>
-        <p>
+        <p className="lg:text-base text-sm">
           {from} - {until}
         </p>
-        <h1 className="font-semibold text-2xl">{title}</h1>
-        <p>{company}</p>
+        <h1 className="font-semibold lg:text-2xl text-xl">{title}</h1>
+        <p className="lg:text-base text-sm">{company}</p>
         <ul className="list-disc ml-5 mt-3">
           {desc.map((v, k) => (
-            <li key={k}>{v}</li>
+            <li className="lg:text-base text-sm" key={k}>
+              {v}
+            </li>
           ))}
         </ul>
       </div>
