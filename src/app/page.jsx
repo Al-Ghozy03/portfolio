@@ -47,7 +47,7 @@ export default function Home() {
         <Image src={dot} alt="dot" />
       </div>
       <Contact />
-      <footer className="flex justify-between px-20 bg-[#F7F8F9] mt-20 py-20">
+      <footer className="flex justify-between px-20 bg-[#F7F8F9] mt-20 py-10">
         <div>
           <Image src={logo} alt="Muhammad Faiz Al Ghozi" />
           <p className="mt-1">Illustration from <span className="font-bold"><a target="_blank" href="https://freepik.com">Freepik</a></span></p>

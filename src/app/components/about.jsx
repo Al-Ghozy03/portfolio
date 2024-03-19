@@ -20,7 +20,12 @@ export default function About() {
         </p>
         <Button className={"w-48"}>Let's talk</Button>
       </div>
-      <Image src={bg} alt="about-me" className="h-[33rem] w-[33rem]" />
+      <a
+        target="_blank"
+        href="https://www.freepik.com/free-vector/hand-coding-concept-illustration_21532468.htm"
+      >
+        <Image src={bg} alt="about-me" className="h-[33rem] w-[33rem]" />
+      </a>
     </section>
   );
 }

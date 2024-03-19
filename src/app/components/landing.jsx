@@ -31,11 +31,16 @@ export default function Landing() {
         </Button>
       </div>
       <div className="flex">
-        <Image
-          src={thumbnail}
-          alt={"thumbnail"}
-          className="h-[43rem] w-[43rem]"
-        />
+        <a
+          href="https://www.freepik.com/free-vector/coding-concept-illustration_82635880.htm"
+          target="_blank"
+        >
+          <Image
+            src={thumbnail}
+            alt={"thumbnail"}
+            className="h-[43rem] w-[43rem]"
+          />
+        </a>
         <div className="flex flex-col items-center space-y-3">
           <div className="w-0.5 h-1/2 bg-red-400" />
           <a
