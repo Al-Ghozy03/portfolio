@@ -14,10 +14,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-export const openEmail = () => {
-  const mailTo = `mailto:muhammadfaizalghozi1@gmail.com?`;
-  window.location.href = mailTo;
-};
+// export const openEmail = () => {
+//   const mailTo = `mailto:muhammadfaizalghozi1@gmail.com?`;
+//   window.location.href = mailTo;
+// };
 
 export default function Home() {
   useEffect(() => {
