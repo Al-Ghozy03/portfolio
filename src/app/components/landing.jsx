@@ -1,5 +1,4 @@
 import thumbnail from "../assets/img/person-with-laptop.jpg";
-import dot from "../assets/img/dot.png";
 import Image from "next/image";
 import github from "../assets/svg/github.svg";
 import linkedin from "../assets/svg/linkedin.svg";
@@ -9,7 +8,7 @@ import Button from "../fragments/button";
 export default function Landing() {
   return (
     <section className="h-screen flex items-center justify-between px-20">
-      <div>
+      <div data-aos="fade-right">
         <h1 className="text-5xl">
           Hi, i'm{" "}
           <span className="font-bold text-[#FF644D]">
@@ -32,6 +31,7 @@ export default function Landing() {
       </div>
       <div className="flex">
         <a
+          data-aos="zoom-out"
           href="https://www.freepik.com/free-vector/coding-concept-illustration_82635880.htm"
           target="_blank"
         >

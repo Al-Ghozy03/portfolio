@@ -3,13 +3,13 @@ import Card from "../fragments/card";
 export default function Services() {
   return (
     <section id="services" className="px-20 pt-20 pb-10">
-      <h1 className="text-4xl font-bold text-right">
+      <h1 className="text-4xl font-bold text-right" data-aos="fade-left">
         <span className="text-[#FF644D]">Let's</span> work together!{" "}
         <span className="text-[#FF644D]">Discover</span> the
         <br />
         services i can offer
       </h1>
-      <div className="grid grid-cols-3 mt-10 gap-x-10">
+      <div className="grid grid-cols-3 mt-10 gap-x-10" data-aos="fade-up">
         <Card
           icon={
             <svg

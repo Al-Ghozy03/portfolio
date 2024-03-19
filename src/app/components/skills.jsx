@@ -20,12 +20,12 @@ export default function Skills() {
       id="skills"
       className="flex px-20 justify-between items-center mt-16"
     >
-      <div className="grid grid-cols-5 gap-y-8 gap-x-14">
+      <div className="grid grid-cols-5 gap-y-8 gap-x-14" data-aos="fade-right">
         {skills.map((v, k) => (
           <Image src={v} key={k} className="h-14 w-14" />
         ))}
       </div>
-      <div>
+      <div data-aos="fade-left">
         <h1 className="text-4xl font-bold text-right">
           My <span className="text-[#FF644D]">Skills</span>
         </h1>

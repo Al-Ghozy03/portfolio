@@ -3,7 +3,7 @@ import Button from "../fragments/button";
 export default function Contact() {
   return (
     <section id="contact" className="flex px-20 mt-24 justify-between">
-      <div>
+      <div data-aos="fade-right">
         <h1 className="text-4xl font-bold text-[#FF644D]">
           Contact <span className="text-black">me</span>
         </h1>
@@ -13,7 +13,7 @@ export default function Contact() {
           questions or business inquiries
         </p>
       </div>
-      <div className="bg-white shadow-xl rounded-3xl px-8 py-5 w-1/2">
+      <div className="bg-white shadow-xl rounded-3xl px-8 py-5 w-1/2" data-aos="fade-up">
         <div className="grid grid-cols-2 gap-x-10 gap-y-5">
           <div className="flex flex-col">
             <label htmlFor="email" className="font-semibold text-lg mb-1">

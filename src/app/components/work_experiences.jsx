@@ -1,10 +1,10 @@
 export default function WorkExperiences() {
   return (
     <section id="work-experience" className="px-20 mt-36 flex space-x-52">
-      <h1 className="text-4xl font-bold text-[#FF644D]">
+      <h1 className="text-4xl font-bold text-[#FF644D]" data-aos="fade-right">
         Work <span className="text-black">Experiences</span>
       </h1>
-      <div className="flex flex-col">
+      <div className="flex flex-col" data-aos="fade-up">
         <Stepper
           from={"Juny 2023"}
           until={"present"}

@@ -5,7 +5,7 @@ import Button from "../fragments/button";
 export default function About() {
   return (
     <section id="about" className="flex justify-between px-20 py-10">
-      <div className="w-1/2">
+      <div className="w-1/2" data-aos="fade-right">
         <h1 className="text-4xl font-bold">
           About <span className="text-[#FF644D]">me</span>
         </h1>
@@ -21,6 +21,7 @@ export default function About() {
         <Button className={"w-48"}>Let's talk</Button>
       </div>
       <a
+        data-aos="fade-left"
         target="_blank"
         href="https://www.freepik.com/free-vector/hand-coding-concept-illustration_21532468.htm"
       >
