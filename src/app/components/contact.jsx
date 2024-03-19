@@ -10,7 +10,7 @@ export default function Contact() {
 
   const onSubmit = (data) => {
     const message = `sent by ${data.email} \n ${data.message}`;
-    const mailTo = `mailto:kiritod366@gmail.com?&subject=${data.subject}&body=${message}`;
+    const mailTo = `mailto:muhammadfaizalghozi1@gmail.com?&subject=${data.subject}&body=${message}`;
     window.location.href = mailTo;
   };
   return (
