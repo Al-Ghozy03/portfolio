@@ -24,14 +24,7 @@ export default function Projects() {
 function Card({ data }) {
   return (
     <div className="border-2 rounded-3xl flex flex-col px-5 py-5 mb-10 bg-white shadow-xl shadow-gray-200">
-      <div
-        className="h-80 w-full rounded-2xl"
-        style={{
-          background: `url(${data.thumbnail.src})`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-        }}
-      />
+      <Image src={data.thumbnail} alt={data.title} className="w-full rounded-2xl" />
       <a href={data.url} target="_blank">
         <h2 className="text-2xl font-semibold mt-5 mb-2 hover:underline">
           {data.title}
