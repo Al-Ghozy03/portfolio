@@ -12,7 +12,7 @@ export default function WorkExperiences() {
       </h1>
       <div className="flex flex-col" data-aos="fade-up">
         <Stepper
-          from={"Juny 2023"}
+          from={"July 2023"}
           until={"present"}
           title={"Software Engineer"}
           company={"PT. Pertamina Training and Consulting"}
