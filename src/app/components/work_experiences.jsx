@@ -17,9 +17,23 @@ export default function WorkExperiences() {
           title={"Software Engineer"}
           company={"PT. Pertamina Training and Consulting"}
           desc={[
-            "Working with React JS, Next JS, and React Native",
-            "Participate in developing Allcare System",
-            "Socializing the use of Allcare System to the provider",
+            "Developing mobile applications using React Native.",
+            "Building and managing backend services with NestJS.",
+            "Designing and implementing web frontend using Next.js.",
+            "Creating SQL queries for reporting and data analysis needs.",
+            "Providing technical support and training for end users.",
+          ]}
+        />
+        <Stepper
+          from={"September 2024"}
+          until={"present"}
+          title={"Backend Developer (Freelance)"}
+          company={"PT. Viktorindo Teknologi Prima"}
+          desc={[
+            "Developing backend services using NestJS.",
+            "Deploying projects on Ubuntu server.",
+            "Collaborating with frontend developers to integrate user-facing elements.",
+            "Implementing RESTful APIs for data access and manipulation.",
           ]}
         />
         <Stepper
@@ -28,10 +42,9 @@ export default function WorkExperiences() {
           title={"IT Developer (Internship)"}
           company={"PT. Graha Digital Pratama (Digital Buana)"}
           desc={[
-            "Developed 3 websites in 6 months internship",
-            "Working with React JS, Next JS, Node JS, and Flutter",
-            "Working with DevOps team",
-            "Participate in developing government websites projects",
+            "Developed frontend and backend solutions using Next.js, Vue.js, Nuxt.js, Laravel, and Flutter across various projects.",
+            "Collaborated with teams to deliver customized IT solutions for diverse clients.",
+            "Contributed to both web and mobile application development, addressing client needs in various industries.",
           ]}
         />
       </div>

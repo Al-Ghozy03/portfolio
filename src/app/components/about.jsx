@@ -13,13 +13,12 @@ export default function About() {
           About <span className="text-[#FF644D]">me</span>
         </h1>
         <p className="lg:text-lg mt-3 mb-5 text-base lg:text-left text-justify">
-          I'm a Software Engineer with 1+ year of experience and a student at
-          Universitas Muhammadiyah Prof. Dr. HAMKA (UHAMKA). I'm passionate
-          about programming, specializing in React JS, Next JS, Node JS, and
-          Flutter. I've worked on diverse projects, including government web
-          projects, blending academic knowledge with industry experience.
-          Continuously learning and innovating for top-notch software solutions
-          drives me.
+          I am a Software Engineer with 2 years of experience and a background
+          in Informatics Engineering. I have successfully developed projects for
+          the Indonesian government and in healthcare managed care. Proficient
+          in frontend, backend, and mobile development using technologies like
+          React.js, Next.js, NestJS, and Flutter, I am dedicated to delivering
+          high-quality software solutions and continuously enhancing my skills.
         </p>
         <a href="#contact">
           <Button className={"lg:w-48 w-full"}>Let's talk</Button>
