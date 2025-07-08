@@ -28,7 +28,7 @@ export default function Projects() {
 
 function Card({ data }) {
   return (
-    <div className="border-2 rounded-3xl flex flex-col px-5 py-5 mb-10 bg-white shadow-xl shadow-gray-200">
+    <div className="border-2 rounded-3xl flex flex-col px-5 py-5 mb-10 bg-white shadow-xl shadow-gray-200 text-justify">
       <Image
         src={data.thumbnail}
         alt={data.title}

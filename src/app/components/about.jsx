@@ -12,13 +12,16 @@ export default function About() {
         <h1 className="lg:text-4xl text-3xl font-bold">
           About <span className="text-[#FF644D]">me</span>
         </h1>
-        <p className="lg:text-lg mt-3 mb-5 text-base lg:text-left text-justify">
-          I am a Software Engineer with 2 years of experience and a background
-          in Informatics Engineering. I have successfully developed projects for
-          the Indonesian government and in healthcare managed care. Proficient
-          in frontend, backend, and mobile development using technologies like
-          React.js, Next.js, NestJS, and Flutter, I am dedicated to delivering
-          high-quality software solutions and continuously enhancing my skills.
+        <p className="lg:text-lg mt-3 mb-5 text-base  text-justify">
+          Fullstack Developer with 2+ years of experience in building web
+          applications using Node.js, Express.js, React.js, Next.js, and
+          Nest.js. Skilled in developing and integrating RESTful APIs, managing
+          databases such as PostgreSQL and MySQL, and creating responsive user
+          interfaces with Tailwind CSS. Contributed to 5+ projects across
+          industries including government and healthcare. Proficient with tools
+          like Git, Postman, and experienced in working within Agile cross
+          functional teams. Committed to delivering clean, scalable, and
+          maintainable code on both frontend and backend.
         </p>
         <a href="#contact">
           <Button className={"lg:w-48 w-full"}>Let's talk</Button>

@@ -47,9 +47,13 @@ export default function Skills() {
       icon: require("../assets/svg/mysql.svg"),
     },
     {
-      label: "mongodb",
-      icon: require("../assets/svg/mongodb.svg"),
+      label: "postgresql",
+      icon: require("../assets/svg/postgre.svg"),
     },
+    // {
+    //   label: "mongodb",
+    //   icon: require("../assets/svg/mongodb.svg"),
+    // },
   ];
   return (
     <section

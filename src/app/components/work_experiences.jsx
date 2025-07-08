@@ -17,23 +17,20 @@ export default function WorkExperiences() {
           title={"Software Engineer"}
           company={"PT. Pertamina Training and Consulting"}
           desc={[
-            "Developing mobile applications using React Native.",
-            "Building and managing backend services with NestJS.",
-            "Designing and implementing web frontend using Next.js.",
-            "Creating SQL queries for reporting and data analysis needs.",
-            "Providing technical support and training for end users.",
+            "Developing and maintaining responsive user interfaces using React.js, Next.js, and Tailwind CSS, integrating seamlessly with backend APIs.",
+            "Building and optimizing RESTful APIs using Golang and NestJS, enabling efficient data flow between frontend and backend systems.",
+            "Collaborating with system analysts in an Agile environment to deliver new features, fix bugs, and support onboarding for internal and external users.",
           ]}
         />
         <Stepper
           from={"September 2024"}
-          until={"present"}
+          until={"June 2025"}
           title={"Backend Developer (Freelance)"}
           company={"PT. Viktorindo Teknologi Prima"}
           desc={[
-            "Developing backend services using NestJS.",
-            "Deploying projects on Ubuntu server.",
-            "Collaborating with frontend developers to integrate user-facing elements.",
-            "Implementing RESTful APIs for data access and manipulation.",
+            "Developed backend services using NestJS to support web and mobile applications.",
+            "Deployed and maintained backend applications on Ubuntu servers.",
+            "Collaborated closely with frontend developers to ensure seamless integration between backend logic and user interfaces.",
           ]}
         />
         <Stepper
@@ -42,9 +39,9 @@ export default function WorkExperiences() {
           title={"IT Developer (Internship)"}
           company={"PT. Graha Digital Pratama (Digital Buana)"}
           desc={[
-            "Developed frontend and backend solutions using Next.js, Vue.js, Nuxt.js, Laravel, and Flutter across various projects.",
-            "Collaborated with teams to deliver customized IT solutions for diverse clients.",
-            "Contributed to both web and mobile application development, addressing client needs in various industries.",
+            "Built and maintained responsive web interfaces using React.js, Next.js, Vue.js, and Nuxt.js, optimized for performance and user experience.",
+            "Developed backend solutions using Laravel and Node.js, including designing RESTful APIs, database schemas, and core business logic for web and mobile platforms.",
+            "Collaborated on fullstack architecture across industries such as government and services, ensuring smooth integration between frontend components and backend systems.",
           ]}
         />
       </div>
@@ -54,7 +51,7 @@ export default function WorkExperiences() {
 
 function Stepper({ from, until, title, company, desc }) {
   return (
-    <div className="flex space-x-5 mb-7">
+    <div className="flex space-x-5 mb-7 w-3/4 text-justify">
       <div className="flex flex-col items-center">
         <div className="h-5 w-5 rounded-full bg-[#FF644D]" />
         <div className="w-0.5 h-full bg-[#FF644D]" />

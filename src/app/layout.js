@@ -6,7 +6,7 @@ const inter = Montserrat({ subsets: ["latin"] });
 export const metadata = {
   title: "Muhammad Faiz Al Ghozi - Portfolio",
   description:
-    "I am a Software Engineer with 2 years of experience and a background in Informatics Engineering. I have successfully developed projects for the Indonesian government and in healthcare managed care. Proficient in frontend, backend, and mobile development using technologies like React.js, Next.js, NestJS, and Flutter, I am dedicated to delivering high-quality software solutions and continuously enhancing my skills.",
+    "Fullstack Developer with 2+ years of experience in building web applications using Node.js, Express.js, React.js, Next.js, and Nest.js. Skilled in developing and integrating RESTful APIs, managing databases such as PostgreSQL and MySQL, and creating responsive user interfaces with Tailwind CSS. Contributed to 5+ projects across industries including government and healthcare. Proficient with tools like Git, Postman, and experienced in working within Agile cross functional teams. Committed to delivering clean, scalable, and maintainable code on both frontend and backend.",
 };
 
 export default function RootLayout({ children }) {
