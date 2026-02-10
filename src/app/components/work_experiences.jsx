@@ -17,9 +17,11 @@ export default function WorkExperiences() {
           title={"Software Engineer"}
           company={"PT. Pertamina Training and Consulting"}
           desc={[
-            "Developing and maintaining responsive user interfaces using React.js, Next.js, and Tailwind CSS, integrating seamlessly with backend APIs.",
-            "Building and optimizing RESTful APIs using Golang and NestJS, enabling efficient data flow between frontend and backend systems.",
-            "Collaborating with system analysts in an Agile environment to deliver new features, fix bugs, and support onboarding for internal and external users.",
+            "Contributed to the development and maintenance of 5 apps serving approximately 150,000 PT Pertamina employees and their families, with a strong focus on system stability, performance, and scalability.",
+            "Developed backend services using Golang and NestJS, as well as frontend applications using Next.js, to support large-scale healthcare operations.",
+            "Designed a mechanism for large-scale data downloads and processing using Python with a period-based cron job approach, ensuring efficient execution without overloading CPU or production databases.",
+            "Involved in the development of an AI-powered system to accelerate healthcare data verification and data entry from printed documents, focusing on backend development using Golang and system integration.",
+            "Collaborated with stakeholder to ensure backend services were well integrated and could be effectively used within operational workflows."
           ]}
         />
         <Stepper
@@ -28,9 +30,9 @@ export default function WorkExperiences() {
           title={"Backend Developer (Freelance)"}
           company={"PT. Viktorindo Teknologi Prima"}
           desc={[
-            "Developed backend services using NestJS to support web and mobile applications.",
-            "Deployed and maintained backend applications on Ubuntu servers.",
-            "Collaborated closely with frontend developers to ensure seamless integration between backend logic and user interfaces.",
+            "Developed the backend of an online visa application website using NestJS, handling core functionalities and data processing.",
+            "Set up the deployment environment on a virtual machine (VM) to test and run the application during development.",
+            "Focused on backend design and implementation, ensuring the system was robust and maintainable for future production rollout.",
           ]}
         />
         <Stepper
@@ -39,9 +41,10 @@ export default function WorkExperiences() {
           title={"IT Developer (Internship)"}
           company={"PT. Graha Digital Pratama (Digital Buana)"}
           desc={[
-            "Built and maintained responsive web interfaces using React.js, Next.js, Vue.js, and Nuxt.js, optimized for performance and user experience.",
-            "Developed backend solutions using Laravel and Node.js, including designing RESTful APIs, database schemas, and core business logic for web and mobile platforms.",
-            "Collaborated on fullstack architecture across industries such as government and services, ensuring smooth integration between frontend components and backend systems.",
+            "Developed and maintained the ticketing website for Mandalika Circuit, ensuring the system could handle high traffic during events.",
+            "Built a ticket scanning application for Mandalika Circuit, enabling fast and accurate check-in processes.",
+            "Developed a website for the Ministry of Tourism, focusing on functionality and user experience.",
+            "Contributed to full-stack development, handling backend APIs, database management, and frontend implementation with modern technologies."
           ]}
         />
       </div>
@@ -60,7 +63,7 @@ function Stepper({ from, until, title, company, desc }) {
         <p className="lg:text-base text-sm">
           {from} - {until}
         </p>
-        <h1 className="font-semibold lg:text-2xl text-xl">{title}</h1>
+        <h1 className="font-semibold lg:text-2xl text-xl my-2">{title}</h1>
         <p className="lg:text-base text-sm">{company}</p>
         <ul className="list-disc ml-5 mt-3">
           {desc.map((v, k) => (

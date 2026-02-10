@@ -16,7 +16,7 @@ export default function Landing() {
             Ghozi
           </span>
         </h1>
-        <p className="lg:text-xl text-lg mt-3 mb-6">Fullstack Developer</p>
+        <p className="lg:text-xl text-lg mt-3 mb-6">Software Engineer</p>
         <Button
           className={"lg:w-64 w-full"}
           onClick={() =>

@@ -13,15 +13,15 @@ export default function About() {
           About <span className="text-[#FF644D]">me</span>
         </h1>
         <p className="lg:text-lg mt-3 mb-5 text-base  text-justify">
-          Fullstack Developer with 2+ years of experience in building web
-          applications using Node.js, Express.js, React.js, Next.js, and
-          Nest.js. Skilled in developing and integrating RESTful APIs, managing
-          databases such as PostgreSQL and MySQL, and creating responsive user
-          interfaces with Tailwind CSS. Contributed to 5+ projects across
-          industries including government and healthcare. Proficient with tools
-          like Git, Postman, and experienced in working within Agile cross
-          functional teams. Committed to delivering clean, scalable, and
-          maintainable code on both frontend and backend.
+          Software Engineer with 3 years of experience delivering
+          production-ready web applications across healthcare, government, and
+          event management sectors. Strong in backend development using Golang
+          and NestJS, complemented by frontend expertise with Next.js and
+          Tailwind CSS. Experienced in designing and integrating RESTful APIs,
+          managing PostgreSQL and MySQL databases, and handling large-scale data
+          processing with Python. Successfully contributed to 10+ projects,
+          building scalable, maintainable, and high-performance systems while
+          collaborating in Agile cross-functional teams.
         </p>
         <a href="#contact">
           <Button className={"lg:w-48 w-full"}>Let's talk</Button>
